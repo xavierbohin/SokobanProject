@@ -1,0 +1,42 @@
+# depslib dependency file v1.0
+1510926987 source:d:\_sdu_courses\ai\sokobansovler\can.cpp
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+	"Target.h"
+	"Item.h"
+	"Can.h"
+	"Common.h"
+
+1510926199 d:\_sdu_courses\ai\sokobansovler\target.h
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+	"Item.h"
+	"Common.h"
+
+1510926096 d:\_sdu_courses\ai\sokobansovler\item.h
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+
+1510927962 d:\_sdu_courses\ai\sokobansovler\common.h
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+	"Item.h"
+	"Target.h"
+
+1510926199 d:\_sdu_courses\ai\sokobansovler\can.h
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+	"Target.h"
+	"Item.h"
+	"Common.h"
+

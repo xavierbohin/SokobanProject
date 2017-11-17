@@ -34,6 +34,7 @@
 		</Compiler>
 		<Unit filename="Can.cpp" />
 		<Unit filename="Can.h" />
+		<Unit filename="Common.h" />
 		<Unit filename="Explored.cpp" />
 		<Unit filename="Explored.h" />
 		<Unit filename="Frontier.cpp" />

@@ -10,7 +10,7 @@
 
 using namespace std;
 
-class Player : protected Item
+class Player : public Item
 {
     public:
         Player();
@@ -18,14 +18,14 @@ class Player : protected Item
         void movedown();
         void moveright();
         void moveleft();
-        Item::getx();
-        Item::gety();
-        Item::setx(int a);
-        Item::sety(int a);
+        /*int Item::getx();
+        int Item::gety();
+        void Item::setx(int a);
+        void Item::sety(int a);*/
 
-    protected:
+    /*protected:
 
-    private:
+    private:*/
         Item::x;
         Item::y;
 

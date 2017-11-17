@@ -15,7 +15,7 @@ class Item
         void setx(int a);
         void sety(int a);
         Item();
-    protected:
+   // protected:
         int x,y;
 };
 

@@ -18,9 +18,11 @@ State::State()
         for(int j=0;j<numy;j++){
             if(field[i][j]=='M'){
                 Player player = new Player(i,j);
+                field[i][j] = '.';
             }
             if(field[i][j]=='J'){
                 cans.push_back(new Can(i,j));
+                field[i][j] = '.';
             }
         }
     }

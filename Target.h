@@ -7,15 +7,16 @@
 #include <queue>
 
 #include "Item.h"
+#include "Common.h"
 
 using namespace std;
 
-class Target : protected Item
+class Target : public Item
 {
     public:
         Target(int a, int b);
-    protected:
-    private:
+    /*protected:
+    private:*/
         Item::x;
         Item::y;
 };

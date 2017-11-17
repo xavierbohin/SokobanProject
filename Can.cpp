@@ -6,6 +6,7 @@
 #include "Target.h"
 #include "Item.h"
 #include "Can.h"
+#include "Common.h"
 
 using namespace std;
 
@@ -39,7 +40,7 @@ void Can::moveleft(){
 void Can::checktarget(){
     isontarget = false;
     for(int i = 0; i<numcans; i++){
-        if((targets(i).getx == Item::x) && (targets(i).gety == Item::y)){
+        if((targets[i].getx() == Item::x) && (targets[i].gety() == Item::y)){
             isontarget = true;
             break;
         }
@@ -47,7 +48,6 @@ void Can::checktarget(){
 }
 
 int Can::closestTarget(){
-    int c = 0;
     int w = 1;
     Can::checktarget();
     if (isontarget){
@@ -56,14 +56,14 @@ int Can::closestTarget(){
     do{
         for(int a=Item::x-w; a<=Item::x+w; a++){
             for(int i=0; i<numcans; i++){
-                if ((targets(i).getx()==a )&&(( targets(i).gety()==Item::y-w) || (targets(i).gety()==Item::y+w))){
+                if ((targets[i].getx()==a )&&(( targets[i].gety()==Item::y-w) || (targets[i].gety()==Item::y+w))){
                     return(w+(Item::x - a));
                 }
             }
         }
         for(int a=Item::y-w+1; a<=Item::y+w-1; a++){
             for(int i=0; i<numcans; i++){
-                if ((targets(i).gety()==a )&&(( targets(i).getx()==Item::x-w) || (targets(i).getx()==Item::x+w))){
+                if ((targets[i].gety()==a )&&(( targets[i].getx()==Item::x-w) || (targets[i].getx()==Item::x+w))){
                     return(w+(Item::y - a));
                 }
             }

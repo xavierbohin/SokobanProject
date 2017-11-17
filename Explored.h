@@ -6,6 +6,7 @@
 #include <queue>
 
 #include "State.h"
+#include "Common.h"
 
 using namespace std;
 
@@ -15,8 +16,8 @@ class Explored
         Explored();
         bool contains(State);
         void add(State node);
-    protected:
-    private:
+    /*protected:
+    private:*/
         vector<State> explored;
 };
 

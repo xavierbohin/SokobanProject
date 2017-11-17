@@ -3,7 +3,11 @@
 #include <string>
 #include <queue>
 
+#include "Can.h"
+#include "Player.h"
 #include "State.h"
+#include "Common.h"
+#include "Explored.h"
 
 
 using namespace std;
@@ -15,7 +19,7 @@ Explored::Explored()
 
 bool Explored::contains(State node){
     bool cont;
-    for(int i = 0;i<explored.size();i++){
+    for(int i = 0; i<(int)explored.size(); i++){
         bool cont = true;
         if (node.getheurisic() == explored.at(i).getheurisic()){
             if ((node.player.getx() == explored.at(i).player.getx()) && (node.player.gety() == explored.at(i).player.gety())){

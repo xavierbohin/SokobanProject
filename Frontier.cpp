@@ -4,6 +4,8 @@
 #include <queue>
 
 #include "State.h"
+#include "Common.h"
+#include "Frontier.h"
 
 using namespace std;
 

@@ -7,10 +7,11 @@
 
 #include "Target.h"
 #include "Item.h"
+#include "Common.h"
 
 using namespace std;
 
-class Can : protected Item
+class Can : public Item
 {
     public:
         Can(int a, int b);
@@ -21,8 +22,8 @@ class Can : protected Item
         int closestTarget();
         bool getisontarget();
 
-    protected:
-    private:
+    /*protected:
+    private:*/
         bool isontarget;
         void checktarget();
         Item::x;

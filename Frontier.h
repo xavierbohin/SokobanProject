@@ -5,6 +5,7 @@
 #include <queue>
 
 #include "State.h"
+#include "Common.h"
 
 
 using namespace std;
@@ -15,8 +16,8 @@ class Frontier
         Frontier();
         void add(State elmt);
         bool contains(State node);
-    protected:
-    private:
+    /*protected:
+    private:*/
         priority_queue<State, vector<State>, CompareTotalCost> tree;
 
 };

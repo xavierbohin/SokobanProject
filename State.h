@@ -9,6 +9,7 @@
 #include "State.h"
 #include "Player.h"
 #include "Can.h"
+#include "Common.h"
 
 using namespace std;
 
@@ -26,8 +27,8 @@ class State
         bool moveright();
         bool isequalto();
 
-    protected:
-    private:
+    /*protected:
+    private:*/
         string steps;
         int cost;
         int heuristic;
