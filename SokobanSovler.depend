@@ -9,6 +9,8 @@
 	"Can.h"
 	"Common.h"
 
+1510932453 
+
 1510926199 d:\_sdu_courses\ai\sokobansovler\target.h
 	<iostream>
 	<vector>
@@ -92,6 +94,8 @@
 	"Common.h"
 	"Explored.h"
 
+1510932392 h"
+
 1510933224 c:\users\msi\documents\github\sokobanprojectgit\player.h
 	<iostream>
 	<vector>
@@ -157,6 +161,130 @@
 	"Common.h"
 
 1510929332 source:c:\users\msi\documents\github\sokobanprojectgit\player.cpp
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+	"Item.h"
+	"Player.h"
+
+1510935147 source:/Users/xav/Desktop/repo/SokobanProject/Can.cpp
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+	"Target.h"
+	"Item.h"
+	"Can.h"
+	"Common.h"
+
+1510935147 /Users/xav/Desktop/repo/SokobanProject/Target.h
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+	"Item.h"
+	"Common.h"
+
+1510935147 /Users/xav/Desktop/repo/SokobanProject/Item.h
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+
+1510935147 /Users/xav/Desktop/repo/SokobanProject/Common.h
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+	"Item.h"
+	"Target.h"
+
+1510935147 /Users/xav/Desktop/repo/SokobanProject/Can.h
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+	"Target.h"
+	"Item.h"
+	"Common.h"
+
+1510935147 source:/Users/xav/Desktop/repo/SokobanProject/Explored.cpp
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+	"Can.h"
+	"Player.h"
+	"State.h"
+	"Common.h"
+	"Explored.h"
+
+1510935854 /Users/xav/Desktop/repo/SokobanProject/Player.h
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+	"Item.h"
+	"Player.h"
+
+1510935147 /Users/xav/Desktop/repo/SokobanProject/State.h
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+	"Item.h"
+	"State.h"
+	"Player.h"
+	"Can.h"
+	"Common.h"
+
+1510935147 /Users/xav/Desktop/repo/SokobanProject/Explored.h
+	<iostream>
+	<string>
+	<vector>
+	<queue>
+	"State.h"
+	"Common.h"
+
+1510935147 source:/Users/xav/Desktop/repo/SokobanProject/Frontier.cpp
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+	"State.h"
+	"Common.h"
+	"Frontier.h"
+
+1510935147 /Users/xav/Desktop/repo/SokobanProject/Frontier.h
+	<iostream>
+	<vector>
+	<queue>
+	"State.h"
+	"Common.h"
+
+1510935147 source:/Users/xav/Desktop/repo/SokobanProject/Item.cpp
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+	"Item.h"
+
+1510935147 source:/Users/xav/Desktop/repo/SokobanProject/main.cpp
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+	"Target.h"
+	"Item.h"
+	"State.h"
+	"Player.h"
+	"Can.h"
+	"Explored.h"
+	"Frontier.h"
+	"Common.h"
+
+1510935147 source:/Users/xav/Desktop/repo/SokobanProject/Player.cpp
 	<iostream>
 	<vector>
 	<string>

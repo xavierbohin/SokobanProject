@@ -8,6 +8,12 @@
 
 using namespace std;
 
+Player::Player() :Item()
+{
+    Item::x = 0 ;
+    Item::y = 0 ;
+}
+
 Player::Player(int a,int b) :Item()
 {
     Item::x =a;
