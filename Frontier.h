@@ -25,6 +25,8 @@ class Frontier
     /*protected:
     private:*/
         priority_queue<State, vector<State>, CompareTotalCost> tree;
+        priority_queue<State, vector<State>, CompareTotalCost> tree2;
+
 
 };
 

@@ -14,9 +14,9 @@ Frontier::Frontier()
     //ctor
 }
 void Frontier::add(State elmt){
-    tree.push_back(elmt);
+    tree.push(elmt);
 }
-bool Frontier::contains(State node){
+/*bool Frontier::contains(State node){
     bool cont;
     for(int i = 0; i<tree.size(); i++){     //For every states in tree
         cont = true;
@@ -33,5 +33,27 @@ bool Frontier::contains(State node){
             }
         }
     }
+    return false;
+}*/
+
+bool Frontier::contains(State node){
+    tree2 = tree;
+    bool cont;
+    do{     //For every states in tree
+        cont = true;
+        if (node.getheurisic() == tree2.top().getheurisic()){          //if the cost is the same
+            if ((node.player.getx() == tree2.top().player.getx()) && (node.player.gety() == tree2.top().player.gety())){
+                for(int j = 0; j<numcans; j++) {
+                    if ((node.cans(j).getx() != tree2.top().cans(j).getx()) || (node.cans(j).gety() != tree2.top().cans(j).gety())){
+                        cont = false;
+                    }
+                }
+                if(cont){
+                    return true;
+                }
+            }
+        }
+        tree2.pop();
+    }while(not tree2.empty());
     return false;
 }
