@@ -13,7 +13,7 @@ using namespace std;
 class Player : public Item
 {
     public:
-        Player();
+        Player(int a, int b);
         void moveup();
         void movedown();
         void moveright();

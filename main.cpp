@@ -56,42 +56,43 @@ int main()
         node = frontier.tree.top();
         frontier.tree.pop();
         if (node.isGoal()){
-            return node.steps;
+            cout << node.steps << endl;
+            return 0;
         }
-        explored.explored.add(node);
+        explored.add(node);
         cout << exploredNodes << endl;
 
         movedup = node;
         if( not movedup.moveup()){
-            if not ((explored.contains(movedup)) || (frontier.contains(movedup))){
+            if (not ((explored.contains(movedup)) || (frontier.contains(movedup)))){
                 frontier.add(movedup);
             }
-            else if ()
+            //else if ()
 
         }
 
         moveddown = node;
         if( not moveddown.movedown()){
-            if not ((explored.contains(moveddown)) || (frontier.contains(moveddown))){
+            if (not ((explored.contains(moveddown)) || (frontier.contains(moveddown)))){
                 frontier.add(moveddown);
             }
-            else if ()
+            //else if ()
         }
 
         movedleft = node;
         if( not movedleft.moveleft()){
-            if not ((explored.contains(movedleft)) || (frontier.contains(movedleft))){
+            if (not ((explored.contains(movedleft)) || (frontier.contains(movedleft)))){
                 frontier.add(movedleft);
             }
-            else if ()
+            //else if ()
         }
 
         movedright = node;
         if( not movedright.moveright()){
-            if not ((explored.contains(movedright)) || (frontier.contains(movedright))){
+            if (not ((explored.contains(movedright)) || (frontier.contains(movedright)))){
                 frontier.add(movedright);
             }
-            else if ()
+            //else if ()
         }
     }
     cout << "failure" << endl;

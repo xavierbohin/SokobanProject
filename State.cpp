@@ -12,22 +12,29 @@ using namespace std;
 
 State::State()
 {
-    steps = void;
+
     cost = 0;
-    for(int i=0;i<numx;i++){
-        for(int j=0;j<numy;j++){
+    for(int i=0;i<dimx;i++){
+        for(int j=0;j<dimy;j++){
             if(field[i][j]=='M'){
-                Player player = new Player(i,j);
+                Player player = Player(i,j);
                 field[i][j] = '.';
             }
             if(field[i][j]=='J'){
-                cans.push_back(new Can(i,j));
+                cans.push_back(Can(i,j));
                 field[i][j] = '.';
             }
         }
     }
     calculateheuristic();
     string steps();
+}
+
+bool State::isGoal(){
+    for(int i = 0; i < numcans; i++){
+        if (not (State::cans.at(i).getisontarget())) return false;
+    }
+    return true;
 }
 
 int State::getcost(){
@@ -60,14 +67,14 @@ void State::calculateheuristic(){
 int State::closestcanfromplayer(){
     int w = 1;
     do{
-        for(int a==player.getx()-w; a<=player.getx()+w; a++){
+        for(int a=player.getx()-w; a<=player.getx()+w; a++){
             for(int i=0; i<numcans;i++){
                 if ((cans.at(i).getx() == a )&&((cans.at(i).gety()==player.gety()-w) || (cans.at(i).gety()==player.gety()+w))){
                     return(w + (player.get(x)-a) );
                 }
             }
         }
-        for(int a==player.gety()-w, a<=player.gety()+w, a++){
+        for(int a=player.gety()-w, a<=player.gety()+w, a++){
             for(int i=0; i<numcans;i++){
                 if ((cans.at(i).gety() == a )&&((cans.at(i).getx()==player.getx()-w) || (cans.at(i).getx()==player.getx()+w))){
                     return(w + (player.get(y)-a) );

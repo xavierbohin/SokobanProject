@@ -26,6 +26,7 @@ class State
         bool moveleft();
         bool moveright();
         bool isequalto();
+        bool isGoal();
 
     /*protected:
     private:*/

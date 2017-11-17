@@ -92,7 +92,7 @@
 	"Common.h"
 	"Explored.h"
 
-1510929332 c:\users\msi\documents\github\sokobanprojectgit\player.h
+1510933224 c:\users\msi\documents\github\sokobanprojectgit\player.h
 	<iostream>
 	<vector>
 	<string>
@@ -100,7 +100,7 @@
 	"Item.h"
 	"Player.h"
 
-1510929332 c:\users\msi\documents\github\sokobanprojectgit\state.h
+1510932990 c:\users\msi\documents\github\sokobanprojectgit\state.h
 	<iostream>
 	<vector>
 	<string>
@@ -141,4 +141,26 @@
 	<string>
 	<queue>
 	"Item.h"
+
+1510933187 source:c:\users\msi\documents\github\sokobanprojectgit\main.cpp
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+	"Target.h"
+	"Item.h"
+	"State.h"
+	"Player.h"
+	"Can.h"
+	"Explored.h"
+	"Frontier.h"
+	"Common.h"
+
+1510929332 source:c:\users\msi\documents\github\sokobanprojectgit\player.cpp
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+	"Item.h"
+	"Player.h"
 
