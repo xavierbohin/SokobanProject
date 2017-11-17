@@ -22,6 +22,8 @@ class Can : public Item
         int closestTarget();
         bool getisontarget();
 
+
+
     /*protected:
     private:*/
         bool isontarget;

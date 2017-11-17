@@ -40,3 +40,82 @@
 	"Item.h"
 	"Common.h"
 
+1510929332 source:c:\users\msi\documents\github\sokobanprojectgit\can.cpp
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+	"Target.h"
+	"Item.h"
+	"Can.h"
+	"Common.h"
+
+1510929332 c:\users\msi\documents\github\sokobanprojectgit\target.h
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+	"Item.h"
+	"Common.h"
+
+1510929332 c:\users\msi\documents\github\sokobanprojectgit\item.h
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+
+1510930151 c:\users\msi\documents\github\sokobanprojectgit\common.h
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+	"Item.h"
+	"Target.h"
+
+1510929832 c:\users\msi\documents\github\sokobanprojectgit\can.h
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+	"Target.h"
+	"Item.h"
+	"Common.h"
+
+1510930005 source:c:\users\msi\documents\github\sokobanprojectgit\explored.cpp
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+	"Can.h"
+	"Player.h"
+	"State.h"
+	"Common.h"
+	"Explored.h"
+
+1510929332 c:\users\msi\documents\github\sokobanprojectgit\player.h
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+	"Item.h"
+	"Player.h"
+
+1510929332 c:\users\msi\documents\github\sokobanprojectgit\state.h
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+	"Item.h"
+	"State.h"
+	"Player.h"
+	"Can.h"
+	"Common.h"
+
+1510929332 c:\users\msi\documents\github\sokobanprojectgit\explored.h
+	<iostream>
+	<string>
+	<vector>
+	<queue>
+	"State.h"
+	"Common.h"
+

@@ -24,7 +24,7 @@ bool Explored::contains(State node){
         if (node.getheurisic() == explored.at(i).getheurisic()){
             if ((node.player.getx() == explored.at(i).player.getx()) && (node.player.gety() == explored.at(i).player.gety())){
                 for(int j = 0; j<numcans; j++) {
-                    if ((node.cans(j).getx() != explored.at(i).cans(j).getx()) || (node.cans(j).gety() != explored.at(i).cans(j).gety())){
+                    if ((node.cans.at(j).getx() != explored.at(i).cans.at(j).getx()) || (node.cans.at(j).gety() != explored.at(i).cans.at(j).gety())){
                         cont = false;
                         break;
                     }
