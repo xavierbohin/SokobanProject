@@ -17,7 +17,11 @@ using namespace std;
 
 
 
-
+struct CompareTotalCost{    //operator to use the priority_queue
+    bool operator()(State const & s1, State const & s2){
+        return s1.totalcost < s2.totalcost;
+    }
+};
 
 int main()
 {

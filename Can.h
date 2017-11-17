@@ -22,14 +22,14 @@ class Can : public Item
         int closestTarget();
         bool getisontarget();
 
-
-
     /*protected:
     private:*/
         bool isontarget;
         void checktarget();
         Item::x;
         Item::y;
+        int getx();
+        int gety();
 
 };
 

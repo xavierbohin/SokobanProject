@@ -9,6 +9,8 @@
 	"Can.h"
 	"Common.h"
 
+1510926096 
+
 1510926199 d:\_sdu_courses\ai\sokobansovler\target.h
 	<iostream>
 	<vector>
@@ -40,7 +42,7 @@
 	"Item.h"
 	"Common.h"
 
-1510929332 source:c:\users\msi\documents\github\sokobanprojectgit\can.cpp
+1510926988 source:/Users/xav/Desktop/repo/SokobanProject/Can.cpp
 	<iostream>
 	<vector>
 	<string>
@@ -50,7 +52,7 @@
 	"Can.h"
 	"Common.h"
 
-1510929332 c:\users\msi\documents\github\sokobanprojectgit\target.h
+1510926200 /Users/xav/Desktop/repo/SokobanProject/Target.h
 	<iostream>
 	<vector>
 	<string>
@@ -58,13 +60,13 @@
 	"Item.h"
 	"Common.h"
 
-1510929332 c:\users\msi\documents\github\sokobanprojectgit\item.h
+1510926098 /Users/xav/Desktop/repo/SokobanProject/Item.h
 	<iostream>
 	<vector>
 	<string>
 	<queue>
 
-1510930151 c:\users\msi\documents\github\sokobanprojectgit\common.h
+1510927964 /Users/xav/Desktop/repo/SokobanProject/Common.h
 	<iostream>
 	<vector>
 	<string>
@@ -72,50 +74,12 @@
 	"Item.h"
 	"Target.h"
 
-1510929832 c:\users\msi\documents\github\sokobanprojectgit\can.h
+1510930196 /Users/xav/Desktop/repo/SokobanProject/Can.h
 	<iostream>
 	<vector>
 	<string>
 	<queue>
 	"Target.h"
 	"Item.h"
-	"Common.h"
-
-1510930005 source:c:\users\msi\documents\github\sokobanprojectgit\explored.cpp
-	<iostream>
-	<vector>
-	<string>
-	<queue>
-	"Can.h"
-	"Player.h"
-	"State.h"
-	"Common.h"
-	"Explored.h"
-
-1510929332 c:\users\msi\documents\github\sokobanprojectgit\player.h
-	<iostream>
-	<vector>
-	<string>
-	<queue>
-	"Item.h"
-	"Player.h"
-
-1510929332 c:\users\msi\documents\github\sokobanprojectgit\state.h
-	<iostream>
-	<vector>
-	<string>
-	<queue>
-	"Item.h"
-	"State.h"
-	"Player.h"
-	"Can.h"
-	"Common.h"
-
-1510929332 c:\users\msi\documents\github\sokobanprojectgit\explored.h
-	<iostream>
-	<string>
-	<vector>
-	<queue>
-	"State.h"
 	"Common.h"
 

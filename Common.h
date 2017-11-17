@@ -14,5 +14,3 @@ extern    char field[50][50];
 extern    Target targets[];
 extern    int dimx,dimy,numcans;
 
-
-
