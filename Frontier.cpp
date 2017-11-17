@@ -39,12 +39,14 @@ void Frontier::add(State elmt){
 bool Frontier::contains(State node){
     tree2 = tree;
     bool cont;
+    State top;
     do{     //For every states in tree
         cont = true;
-        if (node.getheurisic() == tree2.top().getheurisic()){          //if the cost is the same
-            if ((node.player.getx() == tree2.top().player.getx()) && (node.player.gety() == tree2.top().player.gety())){
+        top = tree2.top();
+        if (node.getheurisic() == top.getheurisic()){          //if the cost is the same
+            if ((node.player.getx() == top.player.getx()) && (node.player.gety() == top.player.gety())){
                 for(int j = 0; j<numcans; j++) {
-                    if ((node.cans.at(j).getx() != tree2.top().cans.at(j).getx()) || (node.cans.at(j).gety() != tree2.top().cans.at(j).gety())){
+                    if ((node.cans.at(j).getx() != top.cans.at(j).getx()) || (node.cans.at(j).gety() != top.cans.at(j).gety())){
                         cont = false;
                     }
                 }

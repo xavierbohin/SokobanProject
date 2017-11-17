@@ -37,7 +37,7 @@ int main()
     field[1][3] = 'M';
     field[2][3] = '.';
     field[3][3] = '.';
-    targets[1] = new Target(1,3);
+    targets[1] = Target(1,3);
 
 
     int exploredNodes = 0;
@@ -46,19 +46,19 @@ int main()
     State movedleft;
     State movedright;
 
-    Explored explored = new Explored()
-    node = new State(dimx,dimy,numcans,field);
-    node.settotalcost(node.getcost+node.getheuristic);
-    Frontier frontier = new Frontier;
+    Explored explored = Explored();
+    State node = State();
+    node.calculateheuristic();
+    Frontier frontier = Frontier();
     //priority_queue<State, vector<State>, CompareTotalCost> frontier; //priority queue of states sorted by total cost
-    frontier.push(node);
-    while ( not frontier.empty()){
-        node = frontier.top();
-        frontier.pop();
+    frontier.tree.push(node);
+    while ( not frontier.tree.empty()){
+        node = frontier.tree.top();
+        frontier.tree.pop();
         if (node.isGoal()){
             return node.steps;
         }
-        explored.add(node);
+        explored.explored.add(node);
         cout << exploredNodes << endl;
 
         movedup = node;

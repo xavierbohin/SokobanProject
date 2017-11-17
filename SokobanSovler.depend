@@ -119,3 +119,26 @@
 	"State.h"
 	"Common.h"
 
+1510932392 source:c:\users\msi\documents\github\sokobanprojectgit\frontier.cpp
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+	"State.h"
+	"Common.h"
+	"Frontier.h"
+
+1510930994 c:\users\msi\documents\github\sokobanprojectgit\frontier.h
+	<iostream>
+	<vector>
+	<queue>
+	"State.h"
+	"Common.h"
+
+1510932453 source:c:\users\msi\documents\github\sokobanprojectgit\item.cpp
+	<iostream>
+	<vector>
+	<string>
+	<queue>
+	"Item.h"
+
