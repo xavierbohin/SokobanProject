@@ -44,7 +44,7 @@ bool Frontier::contains(State node){
         if (node.getheurisic() == tree2.top().getheurisic()){          //if the cost is the same
             if ((node.player.getx() == tree2.top().player.getx()) && (node.player.gety() == tree2.top().player.gety())){
                 for(int j = 0; j<numcans; j++) {
-                    if ((node.cans(j).getx() != tree2.top().cans(j).getx()) || (node.cans(j).gety() != tree2.top().cans(j).gety())){
+                    if ((node.cans.at(j).getx() != tree2.top().cans.at(j).getx()) || (node.cans.at(j).gety() != tree2.top().cans.at(j).gety())){
                         cont = false;
                     }
                 }
