@@ -4,10 +4,10 @@
 #include <queue>
 
 #include "Item.h"
-#include "State.h"
+
 #include "Player.h"
 #include "Can.h"
-
+#include "State.h"
 using namespace std;
 
 State::State()
@@ -16,7 +16,7 @@ State::State()
     for(int i=0;i<dimx;i++){
         for(int j=0;j<dimy;j++){
             if(field[i][j]=='M'){
-                Player player = Player(i,j);
+                player = Player(i,j);
                 field[i][j] = '.';
             }
             if(field[i][j]=='J'){
