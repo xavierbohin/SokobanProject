@@ -25,7 +25,7 @@ class State
         bool movedown();
         bool moveleft();
         bool moveright();
-        bool isequalto();
+        bool isequalto(State state2);
         bool isGoal();
 
     /*protected:

@@ -70,14 +70,14 @@ int State::closestcanfromplayer(){
         for(int a=player.getx()-w; a<=player.getx()+w; a++){
             for(int i=0; i<numcans;i++){
                 if ((cans.at(i).getx() == a )&&((cans.at(i).gety()==player.gety()-w) || (cans.at(i).gety()==player.gety()+w))){
-                    return(w + (player.get(x)-a) );
+                    return(w + (player.getx()-a) );
                 }
             }
         }
-        for(int a=player.gety()-w, a<=player.gety()+w, a++){
+        for(int a = player.gety()-w; a <= player.gety()+w; a++){
             for(int i=0; i<numcans;i++){
                 if ((cans.at(i).gety() == a )&&((cans.at(i).getx()==player.getx()-w) || (cans.at(i).getx()==player.getx()+w))){
-                    return(w + (player.get(y)-a) );
+                    return(w + (player.gety()-a) );
                 }
             }
         }
@@ -95,85 +95,85 @@ int State::whichCanIsHere(int x,int y){
 //Return the same state
 bool State::moveup(){
     int canNumber;
-    if (field(State::player.getx())(State::player.gety()-1) == 'X') return;
-    canNumber = theresacanhere(player.getx(),player.gety()-1);
+    if (field[State::player.getx()][State::player.gety()-1] == 'X') return false;
+    canNumber = whichCanIsHere(player.getx(),player.gety()-1);
     if (canNumber == -1){
         player.moveup();
         cost++;
-        calculateheuristic()
+        calculateheuristic();
         return true ;
     }
-    if ((field(State::player.getx())(State::player.gety()-2) == 'X')  || (theresacanhere(player.getx(),player.gety()-2) != -1 ){
+    if ((field[State::player.getx()][State::player.gety()-2] == 'X')  || (whichCanIsHere(player.getx(),player.gety()-2) != -1 )){
         return false;
     }
     player.moveup();
     cost++;
     cans.at(canNumber).moveup();
-    calculateheuristic()
-    steps.push_back("up ");
+    calculateheuristic();
+    steps.push_back('U');
     return true;
 }
 
 bool State::movedown(){
     int canNumber;
-    if (field(State::player.getx())(State::player.gety()+1) == 'X') return;
-    canNumber = theresacanhere(player.getx(),player.gety()+1);
+    if (field[State::player.getx()][State::player.gety()+1] == 'X') return false;
+    canNumber = whichCanIsHere(player.getx(),player.gety()+1);
     if (canNumber == -1){
         player.movedown();
         cost++;
-        calculateheuristic()
+        calculateheuristic();
         return true ;
     }
-    if ((field(State::player.getx())(State::player.gety()+2) == 'X')  || (theresacanhere(player.getx(),player.gety()+2) != -1 ){
+    if ((field[State::player.getx()][State::player.gety()+2] == 'X')  || (whichCanIsHere(player.getx(),player.gety()+2) != -1 )){
         return false;
     }
     player.movedown();
     cost++;
     cans.at(canNumber).movedown();
-    calculateheuristic()
-    steps.push_back("down ");
+    calculateheuristic();
+    steps.push_back('D');
     return true ;
 }
 
 bool State::moveleft(){
     int canNumber;
-    if (field(State::player.getx()-1)(State::player.gety()) == 'X') return;
-    canNumber = theresacanhere(player.getx()-1,player.gety());
+    if (field[State::player.getx()-1][State::player.gety()] == 'X') return false;
+    canNumber = whichCanIsHere(player.getx()-1,player.gety());
     if (canNumber == -1){
         player.moveleft();
         cost++;
-        calculateheuristic()
+        calculateheuristic();
         return true ;
     }
-    if ((field(State::player.getx()-2)(State::player.gety()) == 'X')  || (theresacanhere(player.getx()-2,player.gety()) != -1 ){
+    if ((field[State::player.getx()-2][State::player.gety()] == 'X')  || (whichCanIsHere(player.getx()-2,player.gety()) != -1 )){
         return false;
     }
     player.moveleft();
     cost++;
     cans.at(canNumber).moveleft();
-    calculateheuristic()
-    steps.push_back("left ");
+    calculateheuristic();
+    steps.push_back('L');
     return true;
 }
 
 bool State::moveright(){
     int canNumber;
-    if (field(State::player.getx()+1)(State::player.gety()) == 'X') return;
-    canNumber = theresacanhere(player.getx()+1,player.gety());
+    if (field[State::player.getx()+1][State::player.gety()] == 'X') return false;
+    canNumber = whichCanIsHere(player.getx()+1,player.gety());
     if (canNumber == -1){
         player.moveright();
         cost++;
-        calculateheuristic()
+        calculateheuristic();
         return true;
     }
-    if ((field(State::player.getx()+2)(State::player.gety()) == 'X')  || (theresacanhere(player.getx()+2,player.gety()) != -1 ){
+    if ((field[State::player.getx()+2][State::player.gety()] == 'X')  || (whichCanIsHere(player.getx()+2,player.gety()) != -1 )){
         return false;
     }
     player.moveright();
     cost++;
     cans.at(canNumber).moveright();
-    calculateheuristic()
-    steps.push_back("right ");
+    calculateheuristic();
+    steps.push_back('R');
     return true;
 }
 
@@ -182,7 +182,7 @@ bool State::isequalto(State state2){
     if (State::getheurisic() == state2.getheurisic()){
         if ((State::player.getx() == state2.player.getx()) && (State::player.gety() == state2.player.gety())){
             for(int j = 0;j<numcans;j++) {
-                if ((State::cans(j).getx() != state2.cans(j).getx()) || (State::cans(j).gety() != state2.cans(j).gety())){
+                if ((State::cans.at(j).getx() != state2.cans.at(j).getx()) || (State::cans.at(j).gety() != state2.cans.at(j).gety())){
                     cont = false;
                     break;
                 }
